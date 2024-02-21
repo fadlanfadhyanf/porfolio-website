@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  font-family: "DM Sans", sans-serif;
+}
+
+::-webkit-scrollbar{
+	width: 11px;
+	background-color: #373737;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #1e1e1e;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #EEEEEE;
+}
+
+
+header {
+  display: flex;
+  height: 700px;
+  background: #000000;
+  padding: 150px;
+  gap: 2rem;
+}
+
+header .left {
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: KeKanan 1s forwards;
+}
+
+header .right {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  animation: KeKiri 1s forwards;
+}
+
+header h1{
+  color: #F6C90E;
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+  margin: 0;
+}
+header h2::after {
+  content: '';
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 1.4px;
+  margin: 15px 0px 15px 0px;
+  background-color: #F6C90E;
+}
+header h2{
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin:0;
+}
+header p{
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 200;
+  width: 85%;
+  margin-bottom: 0;
+}
+header .sosial-media{
+  margin-top: 1rem;
+  display: flex; 
+  gap: 1rem;
+}
+
+.sosial-media .icon a{
+  color: #F6C90E;
+  font-size: 2rem;
+  transition: color 0.5s, font-size 0.5s;
+}
+.sosial-media .icon a:hover{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.left img{
+  width: 100%;
+}
+
+nav{
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+nav .nav-mobile{
+  display: none;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 2rem;
+}
+nav li{
+  list-style-type: none;
+}
+nav a{
+  font-size:1rem;
+  font-weight: 400;
+  color: #F6C90E;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #ffffff;
+}
+  
+.container {
+  background-color: #212121;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+  
+aside {
+  flex: 1;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  max-height: calc(78vh - 1rem);
+  background-color: #111111;
+  border-radius: 15px;
+}
+
+aside .content{
+  display: flex;
+  flex-direction: column;
+}
+.content .aside-foto {
+  background-image: url(../image/bio-foto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.content .bio{
+  padding: 10px;
+}
+.bio .sub-bio{
+  background-color: #212121;
+  padding: 1px 20px 10px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.sub-bio .judul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F6C90E;
+}
+.judul h2{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.keterangan{
+  display: none;
+  overflow: hidden;
+}
+
+.sub-bio .keterangan p{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.sub-bio .keterangan li{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.sub-bio .keterangan li p{
+  color: #F6C90E;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 5px 0px 0px 0px;
+}
+
+.sub-bio button{
+  background-color: transparent;
+  border: none;
+}
+
+.sub-bio i{
+  font-size: 16px;
+  color: #ffffff;
+}
+.sub-bio i:hover{
+  color: #F6C90E;
+  font-size: 20px;
+}
+
+main {
+  flex: 3;
+}
+
+.container .card{
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #111111;
+}
+.card .pengalaman-content{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pengalaman-content h2,h3,p{
+  color: #ffffff;
+  margin: 15px 0px 10px 0px;
+}
+
+.pengalaman-perusahaan{
+  flex: 1;
+  background-color: #212121;
+  padding: 12px;
+  border-radius: 10px;
+}
+.pengalaman-keterangan{
+  flex: 2;
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container h1{
+  font-size: 26px;
+  font-weight: 400;
+  color: #F6C90E;
+} */
+.card p{
+  color: #ffffff;
+}
+
+.container .card-kemampuan{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #111111;
+  margin:10px 0px 10px 0px;
+}
+
+.card-kemampuan .head-kemampuan{
+  background-color: #F6C90E;
+  max-width: 180px;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card-kemampuan .head-kemampuan h1{
+  color: #111111;
+  font-weight: 900;
+}
+  
+@media (max-width: 768px) {
+
+  header{
+    height: fit-content;
+    padding: 100px;
+    animation: slide 1s forwards;
+  }
+
+  header .left{
+    display: none;
+  }
+
+  header .right{
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav .nav-large{
+    display: none;
+  }
+
+  nav .nav-mobile{
+    display: flex;
+    padding: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@keyframes KeKanan {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes KeKiri {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
