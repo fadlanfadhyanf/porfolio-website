@@ -259,26 +259,19 @@ main {
 
 .container .card-kemampuan{
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   background-color: #111111;
+  padding: 10px;
   margin:18px 0px 18px 0px;
 }
 
-.card-kemampuan .head-kemampuan{
-  background-color: #F6C90E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  padding: 20px;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.card-kemampuan .head-kemampuan h1{
-  color: #111111;
-  font-size: 25px;
-  font-weight: 900;
+.card-kemampuan h1{
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
 }
 .kemampuan-carousel{
   display: flex;
@@ -291,7 +284,7 @@ main {
 
 .kemampuan-carousel .slide img{
   border-radius: 15px;
-  width: 180px;
+  width: 100%;
 }
 .proyek-content{
   display: flex;
@@ -300,7 +293,7 @@ main {
 }
 .proyek{
   background-color: #212121;
-  width: 14.9vw;
+  width: 286px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -321,17 +314,18 @@ footer{
   gap:1rem;
 }
 footer strong{
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 900;
   color: #F6C90E;
 }
-  
+
+/* Media Queries CSS */
+
 @media (max-width: 768px) {
 
   header{
     height: fit-content;
     padding: 100px;
-    animation: slide 1s forwards;
   }
 
   header .left{
@@ -339,10 +333,14 @@ footer strong{
   }
 
   header .right{
-    flex: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+  }
+  header .right h1{
+    font-size: 3rem;
+  }
+
+  header .right p{
+    /* font-size: 10px; */
   }
 
   nav .nav-large{
@@ -362,8 +360,15 @@ footer strong{
     position: inherit;
   }
 
+  .card .pengalaman-content{
+    flex-direction: column;
+  }
+  .card-kemampuan h1{
+    font-size: 1.5rem;
+  }
 }
 
+/* Motion Animation*/
 @keyframes KeKanan {
   from {
     transform: translateX(-100%);
