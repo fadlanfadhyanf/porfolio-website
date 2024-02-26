@@ -284,6 +284,10 @@ main {
   text-align: center;
   font-weight: 500;
 }
+.card-kemampuan i{
+  color: #ffffff;
+  position: relative;
+}
 .kemampuan-carousel{
   display: flex;
   flex: 1;
