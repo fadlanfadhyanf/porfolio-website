@@ -2,7 +2,7 @@ var coll = document.querySelectorAll(".tombol");
 
 coll.forEach(function(tombol) {
   tombol.addEventListener("click", function() {
-    var keteranganElements = document.querySelectorAll(".keterangan");
+    var keteranganElements = document.querySelectorAll(".body-bio");
     
     keteranganElements.forEach(function(keteranganElement) {
       keteranganElement.style.display = "none";
