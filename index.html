@@ -10,6 +10,7 @@
 </head>
 <body>
     <header id="beranda">
+      <div class="header">
         <div class="left">
           <img src="assets/image/hero.png" alt="">
         </div>
@@ -31,28 +32,27 @@
             </div>
           </div>
         </div>
+      </div>
+        <nav id="navbar">
+          <div class="nav-large">
+            <ul>
+              <li class="icon"><a href="#" id="closeNav"><i class="fa fa-window-close"></i></a></li>
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#pengalaman-kerja">Pengalaman Kerja</a></li>
+              <li><a href="#kemampuan">Kemampuan</a></li>
+              <li><a href="#pengalaman-proyek">Pengalaman Proyek</a></li>
+            </ul>
+          </div>
+          <div class="nav-mobile">
+            <a href="#" id="navButton"><i class="fa fa-list"></i></a>
+          </div>
+        </nav>
     </header>
-
-    <nav id="navbar">
-      <div class="nav-large">
-        <ul>
-          <li class="icon"><a href="#" id="closeNav"><i class="fa fa-window-close"></i></a></li>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#pengalaman-kerja">Pengalaman Kerja</a></li>
-          <li><a href="#kemampuan">Kemampuan</a></li>
-          <li><a href="#pengalaman-proyek">Pengalaman Proyek</a></li>
-        </ul>
-      </div>
-      <div class="nav-mobile">
-        <a href="#" id="navButton"><i class="fa fa-list"></i></a>
-      </div>
-    </nav>
-
   <div class="container">
 
     <aside>
       <div class="content">
-        <div class="aside-foto"></div>
+        <img src="assets/image/bio-foto.jpg" alt="">
         <div class="bio">
           <h1>Biodata</h1>
           <div class="sub-bio">
@@ -116,7 +116,7 @@
     </aside>
 
     <main>
-      <div class="card" id="pengalaman-kerja">
+      <article class="card" id="pengalaman-kerja">
         <h1>Pengalaman Kerja</h1>
         <div class="pengalaman-content">
           <div class="pengalaman-perusahaan">
@@ -141,9 +141,9 @@
             <p>Codigneter, PHP, Mysql, HTML, CSS, Javascript, Midtrans</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="card-kemampuan" id="kemampuan">
+      <article class="card-kemampuan" id="kemampuan">
           <h1>Kemampuan Yang Dimiliki</h1>
           <div class="kemampuan-carousel" id="carousel">
             <div class="slide highlight">
@@ -156,9 +156,9 @@
               <img src="assets/image/mysql.png" alt="Mysql" draggable="false">
             </div>
           </div>          
-      </div>
+      </article>
 
-      <div class="card" id="pengalaman-proyek">
+      <article class="card" id="pengalaman-proyek">
         <h1>Pengalaman Proyek</h1>
         <div class="proyek-content">
           <div class="proyek">
@@ -294,7 +294,7 @@
         </div>
       </div>
     </main>
-  </div>
+  </articel>
 
   <footer>
     <p>&copy; Fadlan Fadhyan Firmandia 2024</p> 

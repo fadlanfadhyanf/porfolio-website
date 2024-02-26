@@ -26,7 +26,7 @@ body, html {
 }
 
 
-header {
+.header {
   display: flex;
   height: 700px;
   background: #000000;
@@ -34,7 +34,7 @@ header {
   gap: 2rem;
 }
 
-header .left {
+.header .left {
   flex: 40%;
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ header .left {
   animation: KeKanan 1s forwards;
 }
 
-header .right {
+.header .right {
   flex: 60%;
   display: flex;
   flex-direction: column;
@@ -51,14 +51,14 @@ header .right {
   animation: KeKiri 1s forwards;
 }
 
-header h1{
+.header h1{
   color: #F6C90E;
   font-size: 4.5rem;
   font-weight: 800;
   line-height: 4.5rem;
   margin: 0;
 }
-header h2::after {
+.header h2::after {
   content: '';
   display: block;
   left: 0;
@@ -67,20 +67,20 @@ header h2::after {
   margin: 15px 0px 15px 0px;
   background-color: #F6C90E;
 }
-header h2{
+.header h2{
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
   margin:0;
 }
-header p{
+.header p{
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 200;
   width: 85%;
   margin-bottom: 0;
 }
-header .sosial-media{
+.header .sosial-media{
   margin-top: 1rem;
   display: flex; 
   gap: 1rem;
@@ -158,13 +158,6 @@ aside .content{
   display: flex;
   flex-direction: column;
 }
-.content .aside-foto {
-  background-image: url(../image/bio-foto.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
 .content .bio{
   padding: 10px;
 }
@@ -338,15 +331,15 @@ footer strong{
 
 @media (max-width: 768px) {
 
-  header{
+  .header{
     height: fit-content;
     padding: 100px;
   }
 
-  header .left{
+  .header .left{
     display: none;
   }
-  header .right h1{
+  .header .right h1{
     font-size: 3rem;
   }
   .container {
@@ -369,26 +362,26 @@ footer strong{
 }
 
 @media (max-width: 425px) {
-  header{
+  .header{
     padding: 5rem;
   }
-  header .right{
+  .header .right{
     text-align: center;
     align-items: center;
   }
-  header .right h1{
+  .header .right h1{
     font-size: 1.8rem;
     line-height: 30px;
   }
-  header .right h2{
+  .header .right h2{
     margin-top: 10px;
     font-size: 1rem;
     line-height: 30px;
   }
-  header .right p{
+  .header .right p{
     display: none;
   }
-  header .icon i{
+  .header .icon i{
     font-size: 1.5rem;
   }
 
