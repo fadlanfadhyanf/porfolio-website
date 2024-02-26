@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/image/bio-foto.jpg">
 </head>
 <body>
-    <header>
+    <header id="beranda">
         <div class="left">
           <img src="assets/image/hero.png" alt="">
         </div>
@@ -21,35 +21,40 @@
           <p>Bebas pilih Anisa, Prawowo atau Janggar. <strong>Asal jangan pilih aku</strong> Hehe.</p>
           <div class="sosial-media">
             <div class="icon">
-              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href="https://instagram.com/fadlansabrud" target="_blank" title="Instagram fadlansabrud"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="icon">
-              <a href=""><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/fadlan-fadhyan-firmandia-249911278?originalSubdomain=id" target="_blank" title="Linkedin Fadlan Fadhyan Firmandia"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="icon">
+              <a href="https://github.com/fadlanfadhyanf" target="_blank" title="Github fadlanfadhyanf"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
     </header>
-    <nav>
+
+    <nav id="navbar">
       <div class="nav-large">
         <ul>
-          <li><a href="">Beranda</a></li>
-          <li><a href="">Pengalaman Kerja</a></li>
-          <li><a href="">Kemampuan</a></li>
-          <li><a href="">Pengalaman Proyek</a></li>
+          <li class="icon"><a href="#" id="closeNav"><i class="fa fa-window-close"></i></a></li>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#pengalaman-kerja">Pengalaman Kerja</a></li>
+          <li><a href="#kemampuan">Kemampuan</a></li>
+          <li><a href="#pengalaman-proyek">Pengalaman Proyek</a></li>
         </ul>
       </div>
       <div class="nav-mobile">
-        <a href=""><i class="fa fa-list"></i></a>
+        <a href="#" id="navButton"><i class="fa fa-list"></i></a>
       </div>
     </nav>
 
   <div class="container">
+
     <aside>
       <div class="content">
         <div class="aside-foto"></div>
         <div class="bio">
           <h1>Biodata</h1>
-
           <div class="sub-bio">
             <div class="judul">
               <h2>Nama Lengkap</h2>
@@ -109,8 +114,9 @@
         </div>
       </div>
     </aside>
+
     <main>
-      <div class="card">
+      <div class="card" id="pengalaman-kerja">
         <h1>Pengalaman Kerja</h1>
         <div class="pengalaman-content">
           <div class="pengalaman-perusahaan">
@@ -137,7 +143,7 @@
         </div>
       </div>
 
-      <div class="card-kemampuan">
+      <div class="card-kemampuan" id="kemampuan">
           <h1>Kemampuan Yang Dimiliki</h1>
         <div class="kemampuan-carousel">
           <div class="slide">
@@ -147,18 +153,21 @@
             <img src="assets/image/html.png" alt="html">
           </div>
           <div class="slide">
-            <img src="assets/image/html.png" alt="html">
+            <img src="assets/image/codeigneter.png" alt="Codeigneter">
+          </div>
+          <!-- <div class="slide">
+            <img src="assets/image/laravel.png" alt="Laravel">
           </div>
           <div class="slide">
-            <img src="assets/image/html.png" alt="html">
+            <img src="assets/image/mysql.png" alt="Mysql">
           </div>
           <div class="slide">
-            <img src="assets/image/html.png" alt="html">
-          </div>
+            <img src="assets/image/js.png" alt="Javascript">
+          </div> -->
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="pengalaman-proyek">
         <h1>Pengalaman Proyek</h1>
         <div class="proyek-content">
           <div class="proyek">
@@ -302,8 +311,9 @@
   </footer>
 
 </body>
-<script src="assets/javascript/dropdown.js"></script>
-<script src="assets/javascript/ketik.js"></script>
-<script>
-</script>
+  <script src="assets/javascript/dropdown.js"></script>
+  <script src="assets/javascript/ketik.js"></script>
+  <script src="assets/javascript/navbar.js"></script>
+  <script src="assets/javascript/scroll.js"></script>
+  <script src="assets/javascript/nav-drop.js"></script>
 </html>

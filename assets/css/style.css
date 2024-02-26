@@ -3,6 +3,8 @@
 body, html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  
 }
 
 *{
@@ -97,11 +99,20 @@ header .sosial-media{
   width: 100%;
 }
 
-nav{
+#navbar{
   top: 0;
   position: fixed;
   width: 100%;
+  transition: background-color 0.3s ease;
 }
+#navbar.scrolled{
+  background-color: #111111;
+}
+
+nav .nav-large .icon{
+  display: none;
+}
+
 nav .nav-mobile{
   display: none;
 }
@@ -135,7 +146,7 @@ nav a:hover{
   
 aside {
   flex: 1;
-  position: sticky;
+
   top: 0;
   overflow-y: auto;
   max-height: calc(78vh - 1rem);
@@ -183,14 +194,14 @@ aside .content{
 .sub-bio .keterangan p{
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 15px;
 }
 
 .sub-bio .keterangan li{
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 10px;
 }
 
@@ -284,7 +295,7 @@ main {
 
 .kemampuan-carousel .slide img{
   border-radius: 15px;
-  width: 100%;
+  width: 180px;
 }
 .proyek-content{
   display: flex;
@@ -331,27 +342,9 @@ footer strong{
   header .left{
     display: none;
   }
-
-  header .right{
-
-  }
   header .right h1{
     font-size: 3rem;
   }
-
-  header .right p{
-    /* font-size: 10px; */
-  }
-
-  nav .nav-large{
-    display: none;
-  }
-
-  nav .nav-mobile{
-    display: flex;
-    padding: 2rem;
-  }
-
   .container {
     flex-direction: column;
   }
@@ -366,6 +359,73 @@ footer strong{
   .card-kemampuan h1{
     font-size: 1.5rem;
   }
+  .card-kemampuan .kemampuan-carousel img{
+    width: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  header{
+    padding: 5rem;
+  }
+  header .right{
+    text-align: center;
+    align-items: center;
+  }
+  header .right h1{
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+  header .right h2{
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  header .right p{
+    display: none;
+  }
+  header .icon i{
+    font-size: 1.5rem;
+  }
+
+  #navbar .nav-large{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #111111;
+    border-radius: 0px 0px 50px 50px;
+  }
+  #navbar .nav-large ul{
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar .nav-large .icon{
+    display: block;
+  }
+
+  #navbar .nav-mobile{
+    display: flex;
+    padding: 2rem;
+  }
+  .card-kemampuan .kemampuan-carousel img{
+    width: 100%;
+  }
+  .proyek h2{
+    font-size: 1.2rem;
+  }
+  .proyek p{
+    font-size: 1rem;
+  }
+  .proyek li{
+    font-size: 0.8rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer strong{
+    font-size: 1.2rem;
+  }
+  
 }
 
 /* Motion Animation*/
